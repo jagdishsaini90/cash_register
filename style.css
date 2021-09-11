@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.main {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.output {
+  visibility: hidden;
+}
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  color: steelblue;
+}
+
+#error {
+  color: red;
+  margin-top: 10px;
+}
+
+h5 {
+  color: gray;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  margin-top: 1rem;
+}
+
+.input {
+  font-size: 14px;
+  outline: #fff;
+  padding: 0.6rem 1rem;
+  border: 2px solid #7c3aed;
+  border-radius: 0.5rem;
+  width: 100%;
+  margin-top: 10px;
+  max-width: 258px;
+}
+
+button {
+  background: #7c3aed;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: large;
+  cursor: pointer;
+  outline: #fff;
+  margin: 10px auto auto auto;
+  display: block;
+}
+
+h2 {
+  margin-top: 2rem;
+  color: rgb(147, 184, 252);
+  font-family: Arial, Helvetica, sans-serif;
+}
+table {
+  min-width: 100%;
+}
+
+td,
+th {
+  border: 1px solid rgb(248, 222, 108);
+  padding: 0 5px 0 5px;
+}
+
+@media screen and (min-width: 600px) {
+  .input {
+    min-width: 400px;
+    margin-top: 20px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+  table {
+    min-width: 60%;
+  }
+  td,
+  th {
+    padding: 10px;
+  }
+}
